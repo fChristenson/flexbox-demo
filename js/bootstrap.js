@@ -2,9 +2,11 @@
 
   'use strict';
 
-  var containers = document.getElementsByTagName('header');
+  // add logo
+  var containers = document.getElementsByClassName('logo-container');
   containers[0].appendChild(logo());
 
+  // add hamburger menu
   var isShowingSidebar;
   var navbars = document.getElementsByTagName('nav');
 
@@ -29,7 +31,7 @@
 
   };
 
-  containers = document.getElementsByClassName('hamburger-menu-container');
+  containers = document.getElementsByClassName('hamburger-menu-container__centered-container');
   containers[0].appendChild(hamburgerMenu(spec));
 
 })();

@@ -25,10 +25,20 @@ body {
 .header {
   order: 1;
   background: #000000;
+  display: flex;
+  flex-flow: row;
+}
+.logo-container {
+  flex: 1 0 auto;
 }
 .hamburger-menu-container{
-  float: right;
+  flex: 0 0 40px;
   display: none;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger-menu-container__centered-container {
+
 }
 .nav {
   order: 2;
@@ -65,6 +75,6 @@ body {
     transform: translateX(-250px);
   }
   .hamburger-menu-container{
-    display: inherit;
+    display: flex;
   }
 }
